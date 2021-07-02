@@ -312,7 +312,7 @@ img {
 }
 
 .home__blob-img {
-    width: 170px;
+    width: 210px;
 }
 
 .home__data {
@@ -389,7 +389,8 @@ img {
 
 .button--white {
     background-color: #FFF;
-    color: var(--first-color)
+    color: var(--first-color);
+    margin-bottom:1rem;
 }
 
 .button--white:hover {
@@ -802,6 +803,7 @@ img {
 .project__title {
     font-size: var(--h2-font-size);
     margin-bottom: var(--mb-0-75);
+    
 }
 
 .project__description {
@@ -814,7 +816,14 @@ img {
 }
 
 .project__img {
+  
     width: 232px;
+
+    border-radius: 6%;
+    margin-top: -1.2rem;
+    margin-right: -1rem;
+    margin-bottom: 2rem;
+   
     justify-self: center;
 }
 
@@ -905,9 +914,32 @@ img {
     padding: .25rem .5rem .5rem 0;
 }
 
+.blog__content {
+    width: 250px;
+    height: 200px;
+    background-color:white;
+    row-gap: 1rem;
+    padding: 5rem 5rem  5rem 5rem;
+    gap: 5rem;
+    grid-template-columns: repeat(4, 2fr);
+
+
+}
+.blog__icon {
+ margin-top: -5rem;
+ font-size: var(--h2-font-size);
+}
+
 /*==================== FOOTER ====================*/
+
+.foot{
+ width: 100%;
+ background-color: var(--first-color);
+}
 .footer {
     padding-top: 2rem;
+
+
 }
 
 .footer__container {
@@ -916,17 +948,23 @@ img {
 
 .footer__bg {
     background-color: var(--first-color-second);
-    padding: 2rem 0 3rem;
+    margin-bottom: -10rem;
+
 }
 
 .footer__title {
-    font-size: var(--h1-font-size);
+    font-size: var(--h2-font-size);
     margin-bottom: var(--mb-0-25);
+    background-color: var(--first-color);
+    justify-content: left;
+    color: gainsboro;
+ 
 
 }
 
 .footer__subtitle {
     font-size: var(--small-font-size);
+    margin-left: -100px;
 }
 
 .footer__links {
@@ -940,7 +978,7 @@ img {
 }
 
 .footer__social {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-right: var(--mb-1-5);
 }
 
@@ -952,8 +990,60 @@ img {
     font-size: var(--smaller-font-size);
     text-align: center;
     color: var(--text-color-light);
-    margin-top: var(--mb-3)
+    margin-top: var(--mb-3);
+    color:whitesmoke;
 }
+
+.section__blog{
+    margin-top:6rem;
+    font-size: var(--h1-font-size);
+    text-align: center;
+}
+.section__subtitle__blog{
+    text-align: center;
+}
+
+
+.grid-container {
+   display: flex;
+   justify-content:center;
+   
+   
+   flex-wrap: wrap;
+  }
+  .grid-item {
+    margin: 20px;
+    padding: 1px;
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    row-gap: -1rem;
+    border-radius: 0.6rem;
+    grid-template-columns: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(700px,360px));
+    
+  }
+  .grid-item p {
+      font-size: var(--h3-font-size);
+      color:black;
+      font-weight: var(--font-medium);
+     
+  }
+  .grid-container img{
+      background-color: gray;
+      border-radius: 1rem;
+      
+  }
+  .grid-container:hover{
+      cursor: pointer;
+      
+  }
+
+  .grid-container a:hover{
+  
+  }
+
 
 .footer__title,
 .footer__subtitle,
@@ -1033,11 +1123,14 @@ img {
     .qualification__data {
         gap: .5rem;
     }
-
+    .button--white {
+        margin-bottom: 1rem;
+    }
     .services__container {
         grid-template-columns: max-content;
         justify-content: center;
     }
+  
 
     .services__content {
         padding-right: 3.5rem;
@@ -1045,9 +1138,13 @@ img {
     .services__modal {
         padding: 0 .5rem;
     }
+    .button--white{
+        margin-bottom: 2rem;
+    }
 
     .project__img {
         width: 200px;
+        margin-top: 2rem;
     }
 
     .testimonial__header,
@@ -1065,6 +1162,9 @@ img {
     .testimonial__description {
         text-align: center;
     }
+    .project__img{
+        margin-top: 3rem;
+    }
 }
 
 /* For medium devices */
@@ -1079,6 +1179,12 @@ img {
         order: 1;
         justify-self: center;
     }
+    .blog__content{
+        grid-template-columns:repeat(3,1fr);
+    
+    
+        
+    }
 
     .about__container,
     .skills_container,
@@ -1087,6 +1193,10 @@ img {
     .contact__container,
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project__container{
+        height: 16rem;
     }
 
     .qualification__sections {
@@ -1142,6 +1252,38 @@ img {
         .change-theme {
             margin: 0;
         }
+         
+        .skills_html{
+            width: 90%;
+        }
+        .skills_css{
+            width:70%;
+        }
+        .skills_javascript{
+               width: 60%;
+        }
+
+        .skills_reactjs{
+                width: 60%;
+        }
+
+           
+
+        .skills_nodejs{
+            width: 55%;
+        }
+
+          .skills_firebase{
+              width: 60%;
+          }
+
+           .skills_expressjs{
+               width: 70%;
+           }
+
+           .skills_MongoDB{
+               width: 60%;
+           }
 
         .home__container {
             row-gap: 5rem;
@@ -1165,6 +1307,9 @@ img {
         }
         .about__img {
             width: 350px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 1rem;
+            border: 1px solid var(--first-color);
         }
         .about__description {
             text-align: initial;
@@ -1190,8 +1335,15 @@ img {
             grid-template-columns: repeat(3, 218px);
             justify-content: center;
         }
+        .blog__content {
+            grid-template-columns:repeat(1,208px);
+            justify-content: center;
+        }
         .services__icon {
             font-size: 2rem;
+        }
+        .home__social a{
+            font-size: 1.5rem;
         }
         .services__content {
             padding: 6rem 0 2rem 2.5rem;
@@ -1218,6 +1370,10 @@ img {
             padding: 3rem 2.5rem 0;
             grid-template-columns: 1fr max-content;
             column-gap: 3rem;
+        
+        }
+        .project__container img {
+            margin-bottom: 4rem;
         }
         .project__data {
             padding-top: .8rem;
@@ -1227,6 +1383,9 @@ img {
         }
         .footer__bg {
             padding: 3rem 0 3.5rem; 
+        }
+        .footer__title{
+            margin-right: 10rem;
         }
 
         .footer__links {
@@ -1255,6 +1414,7 @@ img {
     }
     .home__social {
         transform: translateX(-6rem);
+        
     }
     .services__container {
         grid-template-columns: repeat(3, 238px);
